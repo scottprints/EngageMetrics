@@ -1,3 +1,6 @@
+![image](https://github.com/user-attachments/assets/1ccb5ea0-0fed-4ccb-8c53-ca7d2683bcc2)
+
+
 # EngageMetrics Landing Page
 
 A modern, responsive landing page built with PHP (for includes), Tailwind CSS, and JavaScript. Features a dark design with glassmorphic elements and an animated lava lamp background in the hero section.
