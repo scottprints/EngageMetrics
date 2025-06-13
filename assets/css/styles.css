@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animated number counter style */
+.counter {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* Enable smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fade-in animation for section entrance */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s cubic-bezier(0.4,0,0.2,1) both;
+}
+
+/* Mobile menu (not implemented) */
+.mobile-menu {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+    transform: translateX(0);
+}
+
+/* Focus ring utility for accessibility */
+.focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50;
+}
+
+/* Primary button style */
+.btn-primary {
+    @apply bg-blue-500 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-blue-600 transition-colors duration-200;
+}
+
+/* Card hover effect for stat/feature cards */
+.card-hover {
+    @apply transition-transform duration-300 hover:scale-105 hover:shadow-2xl;
+    background: rgba(31,41,55,0.7); /* gray-800/70 */
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(55,65,81,0.7); /* gray-700 */
+}
+
+/* Section padding utility */
+.section-padding {
+    @apply py-12 md:py-20;
+}
+
+/* Gradient text utility */
+.text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-600;
+}
+
+/* Sticky navigation bar style */
+.sticky-nav {
+    @apply fixed top-0 left-0 w-full z-50 bg-gray-950 backdrop-blur-md shadow-md transition-all;
+}
+
+/* Floating label styles for contact form fields */
+input:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:focus + label,
+textarea:not(:placeholder-shown) + label {
+    @apply -top-5 text-blue-400 text-sm;
+}
+
+input, textarea {
+    @apply bg-transparent text-gray-100;
+}
+
+/* Progress bar animation for stat cards */
+.progress-bar {
+    @apply transition-all duration-1000;
+}
+
+/* Utility for blurred SVG backgrounds */
+.hero-bg {
+    @apply absolute top-0 left-0 w-full h-32 md:h-48;
+    z-index: 0;
+}
+
+/* Bouncing icon animation for stat/feature icons */
+.animate-bounce {
+    animation: bounce 1.5s infinite;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+} 

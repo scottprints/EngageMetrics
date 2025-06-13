@@ -1,0 +1,16 @@
+{
+  "name": "engagemetrics",
+  "version": "1.0.0",
+  "description": "A modern, responsive landing page showcasing engagement metrics and statistics, built with PHP, Tailwind CSS, and JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./assets/css/styles.css -o ./assets/css/output.css",
+    "build:prod": "tailwindcss -i ./assets/css/styles.css -o ./assets/css/output.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.0"
+  }
+}
