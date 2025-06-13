@@ -1,0 +1,13 @@
+{
+    "name": "scottprints/engagemetrics",
+    "description": "Modern landing page with dark mode and animated SVG background",
+    "type": "project",
+    "require": {
+        "php": "^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "EngageMetrics\\": "src/"
+        }
+    }
+} 
