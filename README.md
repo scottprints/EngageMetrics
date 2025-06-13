@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/1ccb5ea0-0fed-4ccb-8c53-ca7d2683bcc2)
+![Untitled](https://github.com/user-attachments/assets/374393b3-7c64-45f2-b4f5-f5d8d2deb268)
+
 
 
 # EngageMetrics Landing Page
